@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakeNote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/notes.css" />
+    <link rel="stylesheet" href="/styles/create-note.css">
+    <!-- <script src="/js/main.js" defer></script> -->
+    <script src="/js/helpers.js" defer></script>
+    <script src="/js/add-note.js" defer></script>
+    <script src="/js/edit-note.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/landing.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p href="" class="logo">MakeNotes</p>
+      <div class="nav">
+        <a class="nav-link btn create-note-btn">Create a note</a>
+        <a class="nav-link btn back-to-notes-btn">Back to notes</a>
+      </div>
+    </header>
+
+    <main id="all-notes">
+      <h2 class="no-notes">You have no notes yet. Start adding !</h2>
+      
+      <section class="notes work-notes">
+        <h2 class="cat">Work notes</h2>
+        
+      </section>
+
+      <section class="notes home-notes">
+        <h2 class="cat">Home notes</h2>
+        
+      </section>
+
+      <section class="notes other-notes">
+        <h2 class="cat">Other notes</h2>
+       
+      </section>
+
+      <section class="create-note">
+        <div class="form-box">
+          <h2>Create a note</h2>
+          <form class="form">
+            <label for="category">Category</label>
+            <select name="category" id="category">
+              <option value="none" selected>--choose category--</option>
+              <option value="work">Work</option>
+              <option value="home">Home</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="msg"></p>
+
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title"/>
+            <p class="msg"></p>
+
+            <label for="description">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <p class="msg"></p>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"/>
+            <p class="msg"></p>
+
+            <div class="form-btns">
+              <button class="btn add" type="submit">Add</button>
+              <button class="btn cancel" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="edit-note">
+        <div class="form-box">
+          <h2>Edit a note</h2>
+          <form class="form-edit">
+            <label for="edit-category">Category</label>
+            <select name="edit-category" id="edit-category">
+              <option value="none" selected>--choose category--</option>
+              <option value="work">Work</option>
+              <option value="home">Home</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="msg"></p>
+
+            <label for="edit-title">Title</label>
+            <input type="text" name="edit-title" id="edit-title"/>
+            <p class="msg"></p>
+
+            <label for="edit-description">Description</label>
+            <textarea
+              name="edit-description"
+              id="edit-description"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <p class="msg"></p>
+
+            <label for="edit-date">Date</label>
+            <input type="date" name="edit-date" id="edit-date"/>
+            <p class="msg"></p>
+
+            <div class="form-btns">
+              <button class="btn add add-edit" type="submit">Edit</button>
+              <button class="btn cancel" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

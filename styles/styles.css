@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg-color: #212121;
+    --primary: #9ef57f;
+    --primary-dark: #35552a;
+    --work: #dfe0a3;
+    --work-stroke: #767757;
+    --work-title: #313127;
+    --work-description: #61624b;
+    --home: #a3e0d1;
+    --home-stroke: #5a7d75;
+    --home-title: #2c3c38;
+    --home-description: #445e57;
+    --other: #eedafd;
+    --other-stroke: #645b6b;
+    --other-title: #322e35;
+    --other-description: #645d69;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+
+  .no-notes {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    
+  }
+  
+
+  
+  body {
+    font-family: "Neuton", serif;
+    background-color: var(--bg-color);
+  }
+  
+  header {
+    margin: 0.5rem 4.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    /* color: var(--primary); */
+    color: white;
+    font-size: 1.7em;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin: 0 1.5rem;
+    color: white;
+    font-size: 1.3em;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .nav .btn {
+    display: block;
+    padding: 0.3rem 0.5rem;
+    list-style: none;
+    border: 1px solid var(--primary);
+    transition: 0.3s;
+  }
+  
+  .nav .btn:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary-dark);
+    color: var(--primary-dark);
+  }
+  
+  .nav .back-to-notes-btn {
+    display: none;
+  }
+
+
+  #all-notes {
+    margin: 4rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .notes-boxes {
+    margin: 2rem 0;
+  }
+  
+  .note-box {
+    list-style: none;
+    margin: 0 1rem;
+    border-radius: 5px;
+  }
+  
+  .box-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    margin: 0 0.3rem;
+    padding: 0.1rem 0.5em;
+    font-family: inherit;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .btn img {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.3rem;
+  }
+  
+  .box-btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box-content {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .date-box {
+    margin-top: 1em;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .box-content-work h3 {
+    color: var(--work-title);
+  }
+  
+  .box-content-work p {
+    color: var(--work-description);
+  }
+  
+  .underline {
+    height: 1px;
+  }
+  
+  /* #body {
+      white-space: pre-wrap;
+    } */
+  

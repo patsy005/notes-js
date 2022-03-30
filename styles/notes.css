@@ -1,0 +1,130 @@
+/* work */
+.work {
+    background-color: var(--work);
+}
+
+.work h3 {
+    color: var(--work-stroke);
+    font-size: 1.3em;
+}
+
+.work .btn {
+    border: 1px solid var(--work-stroke);
+    color: var(--work-stroke);
+}
+
+.work .btn:hover {
+    background-color: var(--work-stroke);
+    color: white;
+    border: none;
+}
+
+.work .box-content h3 {
+    color: var(--work-title);
+}
+.work .box-content p {
+    color: var(--work-description);
+}
+
+.work .date-box .date-text {
+    color: var(--work-title);
+    margin-right: 0.3rem;
+}
+
+.work .date-box .date {
+    color: var(--work-stroke);
+}
+
+.work .underline {
+    background-color: var(--work-stroke);
+    opacity: 30%;
+}
+
+
+/* home */
+
+.home {
+    background-color: var(--home);
+}
+
+.home h3 {
+    color: var(--home-stroke);
+    font-size: 1.3em;
+}
+
+.home .btn {
+    border: 1px solid var(--home-stroke);
+    color: var(--home-stroke);
+}
+
+.home .btn:hover {
+    background-color: var(--home-stroke);
+    color: white;
+    border: none;
+}
+
+
+.home .box-content h3 {
+    color: var(--home-title);
+}
+.home .box-content p {
+    color: var(--home-description);
+}
+
+.home .date-box .date-text {
+    color: var(--home-title);
+    margin-right: 0.3rem;
+}
+
+.home .date-box .date {
+    color: var(--home-stroke);
+}
+
+.home .underline {
+    background-color: var(--home-stroke);
+    opacity: 30%;
+}
+
+/* other */
+.other {
+    background-color: var(--other);
+}
+
+.other h3 {
+    color: var(--other-stroke);
+    font-size: 1.3em;
+}
+
+.other .btn {
+    border: 1px solid var(--other-stroke);
+    color: var(--other-stroke);
+    transition: .3s;
+}
+
+.other .btn:hover {
+    background-color: var(--other-stroke);
+    border: none;
+    color: white;
+}
+
+
+.other .box-content h3 {
+    color: var(--other-title);
+}
+.other .box-content p {
+    color: var(--other-description);
+}
+
+.other .date-box .date-text {
+    color: var(--other-title);
+    margin-right: 0.3rem;
+}
+
+.other .date-box .date {
+    color: var(--other-stroke);
+}
+
+.other .underline {
+    background-color: var(--other-stroke);
+    opacity: 30%;
+}
